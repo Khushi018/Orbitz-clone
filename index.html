@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav>
+   <span class="logo"><img src="./images/Abhijeeeeet.png" alt=""></span>
+   
+    <ul>
+        <li><a href="">More Travel</a></li>
+        <li><a href="">Espanol</a></li>
+        <li><a href="">List you property</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Trips</a></li>
+        <li><a onclick="lolo()" id="sign" href="./signin.html">Sign in</a></li>
+    </ul>
+  </nav>
+  <div id="head_b">
+    <img src="./images/header.jpg"  alt="">
+    <div id="header">j</div>
+  </div>
+
+  <div class="card3">
+    <div><img src="./images/1card.jpg" alt=""></div>
+    <div><img src="./images/card2.jpg" alt=""></div>
+    <div><img src="./images/card3.jpg" alt=""></div>
+  </div>
+</body>
+<style>
+    .card3{
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card3>div{
+       width:31%;
+       border: 1px solid red;
+    }
+    .card3>div>img{
+        width:100%;
+    }
+    #head_b>img{
+        width: 100%;
+    }
+    #head_b>#header{
+        width: 80%;
+        height: 90%;
+        text-align: center;
+        background-color: white;
+        border:2px solid;
+    }
+    span{
+        color:antiquewhite;
+        margin-bottom: 10px;
+        display: inline;
+        list-style: none;
+        /* line-height: 8px; */
+        padding-bottom: 10px;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: serif;
+    }
+    nav {
+        background-color:#00253C ;
+    }
+    .logo>img{
+       margin-left: 20px;
+       width: 15%;
+       height: 100px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 105px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    a.active,a:hover{
+        color: rgb(0, 164, 187);
+    }
+</style>
+</html>

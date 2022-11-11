@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <!-- <link rel="stylesheet" href=".css/signin.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="shortcut icon" href="images/logo.svg" /> -->
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+.main{
+    display: flex;
+    width: 65%;
+     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.facebook,.email{
+    width: 50%;
+   
+    margin: 10px 5px
+}
+input{
+    width: 80%;
+    height: 48px;
+     margin: 5px 0px;
+}
+.email > form > p{
+    
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;  
+ margin-bottom: 10px;
+ color: #747474
+
+}
+.email > form > p > a > span{
+    color: #007EAC;
+}
+.email > form > p > a{
+    text-decoration: none;
+}
+.email > form > p > a:hover{
+    text-decoration: underline  #007EAC;;
+}
+.email > form > div> i{
+    position: relative;
+    margin-left: -35px;
+    cursor: pointer;
+    bottom: 5px;
+    font-size: 18px;
+  color: #555555;
+}
+
+#create{
+    background-color:#C83259;
+    color: white;
+    width: 96%;
+    border: none;
+    font-size: 18px;
+    margin: 15px 0px; 
+}
+#create:hover{
+    background-color:#82223c;
+}
+
+.email > form >h2,.facebook> h2{
+    margin: 30px 10px;
+}
+
+.email > form> .mail{
+    position: relative;
+}
+/* place holder anime */
+
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 12px;
+  bottom: 10px;
+  left: 15px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 95%;
+  height: 48px;
+   padding-left: 15px;
+  padding-top: 12px;
+  border: 1px solid rgb(196, 196, 196);
+
+}
+
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 22px;
+  transition: 0.2s ease all;
+  color: gray;
+}
+/* placeholder end */
+
+.apple,.face{
+    position: relative;
+    width: 95%;
+    border: 1px solid rgb(196, 196, 196);
+    height: 48px;
+    margin: 10px 0px
+
+}
+.facebook{
+padding-top: 5px;
+}
+.apple > img{
+    position: absolute;
+    width: 22px;
+    left: 10px;
+    top: 8px;
+}
+.face> img{
+    position: absolute;
+    width: 30px;
+    left: 10px;
+    top: 8px;
+}
+.apple > h2,.face> h2{
+    position: absolute;
+    left: 70px;
+    top: 13px;
+    font-size: 18px;
+    color: #007EAC;
+    font-weight: 400;
+    
+}
+.apple,.face{
+    cursor: pointer;
+}
+
+.back{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.back > i{
+    font-size: 25px;
+    padding: 10px;
+    color: #007EAC;
+}
+
+.apple > i,.face> i{
+    position: absolute;
+    color: #007EAC;
+    right: 30px;
+    font-size: 20px;
+    top: 12px;
+}
+.back:hover{
+    border: 1px solid black;
+}
+/* sigun responsive */
+@media(max-width:1000px){
+ .main{
+     width: 90%;
+ }
+
+}
+@media(max-width:600px){
+    .main{
+        width: 90%;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+   .facebook,.email{
+       width: 90%;
+       margin: auto;
+   }
+    
+    
+}
+</style>
+  </head>
+
+<!-- body -->
+
+  <body>
+    <a href="index.html">
+      <div class="back" id="cross">
+        <i class="fa fa-times" aria-hidden="true"></i></div
+    ></a>
+    <hr />
+    <div class="main">
+      <div class="email">
+        <form action="" id="signin">
+          <h2>Create an account with email</h2>
+
+          <div class="mail">
+            <input type="text" id="f&l_name" class="inputText" required /><br />
+            <span class="floating-label">First and last name</span>
+          </div>
+          <div class="mail">
+            <input type="email" id="email" class="inputText" required />
+            <span class="floating-label">Your email address</span>
+          </div>
+          <div class="mail">
+            <input
+              type="password"
+              id="password"
+              class="inputText"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+            <i class="fa fa-eye" id="togglePassword"></i><br />
+            <span class="floating-label">Password</span>
+          </div>
+
+          <p>Must be 8 to 30 characters with no spaces</p>
+          <p>
+            By creating an account, I agree to the Orbitz
+            <a href=""><span>Terms of Use,Privacy Policy</span></a
+            >, and
+            <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a>
+          </p>
+          <input type="submit" value="Create account" id="create" />
+          <p>
+            Already have an account?<a href="login.html"
+              ><span>Sign in</span></a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="./js/signin.js"></script> -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+  </body>
+</html>
+
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+var apple= document.getElementById('app')
+var face = document.getElementById('face')
+
+function show(){
+    var h1= document.getElementById('show1')
+   h1.style.textDecoration="underline"
+}
+apple.onmouseover=show
+
+
+
+function show1(){
+    var h1= document.getElementById('show1')
+   h1.style.textDecoration="none"
+}
+apple.onmouseleave=show1
+
+function faceshow(){
+    var h1= document.getElementById('show2')
+   h1.style.textDecoration="underline"
+}
+face.onmouseover = faceshow
+
+function faceshow1(){
+    var h1= document.getElementById('show2')
+   h1.style.textDecoration="none"
+}
+face.onmouseleave=faceshow1
+
+
+var form1 = document.getElementById('signin')
+        var signup = []
+        function signUp(e) {
+            e.preventDefault()
+            var name = document.getElementById("f&l_name").value;
+            var email = document.getElementById("email").value;
+           
+            var pass = document.getElementById("password").value;
+            var user = {
+                name:name,
+                email: email,
+                password: pass
+            }
+            signup.push(user)
+            sign = JSON.stringify(signup)
+            localStorage.setItem("signup", sign)
+            swal("Sign in Success", "Enjoy your Trip", "success");
+           
+        }
+        form1.onsubmit = signUp
+
+
+</script>

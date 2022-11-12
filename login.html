@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <style>
+        body >div{
+      margin:80px auto;
+      border: 1px solid;
+      width:300px;
+      height: 500px;
+    }
+    input{
+        width: 300px;
+        height: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" id="login-form">
+            <input type="email" name="" id="email" placeholder="Enter Your Email">
+            <input type="password" name="" placeholder="Enter Password" id="password">
+            <input type="submit" value="LOG IN" onclick="back()">
+        </form>
+    </div>
+    
+</body>
+</html>
+<script>
+
+function back(){
+    window.location.href="index.html";
+  }
+    let form = document.querySelector("#login-form");
+    let data = JSON.parse(localStorage.getItem("data"));
+    form.addEventListener("submit",(event)=>{
+      event.preventDefault();
+      let obj = {
+        
+        email:form.email.value,
+        password:form.password.value,
+      }
+      let flag = false;
+      for(let i=0;i<data.length;i++){
+        if(obj.email ===data[i].email && obj.password === data[i].password){
+            flag = true;
+        }
+      }
+      if(flag) {
+        alert(`Hi ${obj.email} Welcome to the Application`);
+      } else {
+        alert("INVALID data");
+      }
+      form.email.value=""
+      form.password.value="";
+    }); 
+  </script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN IN/SIGN UP</title>
+  <style>
+    body >div{
+      margin:80px auto;
+      border: 1px solid;
+      width:300px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button><a href="login.html">SIGN IN</a> </button>
+    <button><a href="signup.html">SIGN UP</a> </button>
+    <div>
+      <form action="" id="signup-form">
+
+       <input type="text" name="" id="name" placeholder="Enter You Name">
+       <input type="email" name="" id="email" placeholder="Enter Your Email">
+       <input type="password" name="" placeholder="Enter Password" id="password">
+       <input type="submit" value="Create An Account" onclick="back()">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  function back(){
+    window.location.href="index.html";
+  }
+  let form = document.querySelector("#signup-form");
+  let data = JSON.parse(localStorage.getItem("data"))||[];
+  form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    let obj = {
+      name:form.name.value,
+      email:form.email.value,
+      password:form.password.value,
+    }
+    data.push(obj)
+    localStorage.setItem("data",JSON.stringify(data));
+    
+    form.name.value=""
+    form.email.value=""
+    form.password.value="";
+  }); 
+</script>

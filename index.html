@@ -1,0 +1,1952 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>ORBITZ</title>
+</head>
+<body style="background-color: #f5f5f5;">
+    <div id="landCont">
+        <div id="landWrapper">
+          <nav>
+            <ul>
+              <li id="logo">
+                <a href="index.html">
+                  <img
+                    src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201"
+                    alt="img"
+                  />
+                </a>
+              </li>
+              <li>
+                <select name="" id="moreTra`">
+                  <option value="">More Travel</option>
+                  <option value="">Stays</option>
+                  <option value="">Flights</option>
+                  <option value="">Packages</option>
+                  <option value="">Cars</option>
+                  <option value="">Cruises</option>
+                  <option value="">Things to Do</option>
+                  <option value="">Deals</option>
+                  <option value="">Groups and Meetings</option>
+                  <option value="">Travel Blogs</option>
+                </select>
+              </li>
+               <!-- <li>
+                <a href="#" id="moreTravel" onclick="moretravel()" >More travel<i class="arrow"></i></a>
+              
+                <div class="submenu">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fas fa-building fa-xs"></i>Hotels</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-plane fa-xs"></i>Flights</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-suitcase fa-xs"></i>Packages</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-car fa-xs"></i>Cars</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-home fa-xs"></i>Vacation Rental</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-ship fa-xs"></i>Cruises</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-box fa-xs"></i>Things to do</a>
+                    </li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Travel Blog</a></li>
+                  </ul>
+                </div>
+              </li> -->
+            </ul> 
+  
+            <ul>
+              <li>
+                <a href="#">Español</a>
+              </li>
+              <li>
+                <a href="#">List your property</a>
+              </li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Trips</a></li>
+              <li class="signinDiv">
+                <a href="signup.html">Sign In</a>
+                <div class="signin">
+                  <h3>
+                    Members can access discounts, points and special features
+                  </h3>
+                  <a href="login.html"> <button>Sign in</button></a>
+                  <a href="signin.html" id="createAcc">Create a free account</a>
+                  <a href="#">List of favourites</a>
+                  <a href="#">Loyaity program</a>
+                  <hr />
+                  <a href="#">Feedback</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+           <section id="bookingDiv">
+            <div id="bookingBox">
+              <ul class="bookingIcons">
+                <li data-key="0" class="currentBooking">
+                  <i class="fas fa-building fa-lg"></i>
+                  <p>Hotels</p>
+                </li>
+                <li data-key="1">
+                  <i class="fas fa-plane fa-lg"></i>
+                  <p>Flights</p>
+                </li>
+                <li data-key="2">
+                  <i class="fas fa-car fa-lg"></i>
+                  <p>Cars</p>
+                </li>
+                <li data-key="3">
+                  <i class="fas fa-suitcase fa-lg"></i>
+                  <p>Packages</p>
+                </li>
+                <li data-key="4">
+                  <i class="fas fa-ticket-alt"></i>
+                  <p>Things to do</p>
+                </li>
+                <li data-key="5">
+                  <i class="fas fa-ship fa-lg"></i>
+                  <p>Cruises</p>
+                </li>
+              </ul>
+  
+              <div class="bookingBox">
+                <!-- hotel booking -->
+                <div data-key="0" class="bookingDetailShow displayDetails">
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i class="currentLocation">Going to</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input
+                          class="searchLocationInput"
+                          type="text"
+                          placeholder="Where are you going?"
+                        />
+                      </div>
+                    </div>
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-in</span>
+                          <span class="date"></span>
+                        </span>
+  
+                        <div class="searchDateDiv">
+                          <iframe
+                            src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                            style="border: solid 1px #777"
+                            width="700"
+                            height="470"
+                            frameborder="0"
+                            scrolling="no"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-out</span>
+                          <span class="date"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="travellersBtn bookingDetailsBtn">
+                      <div class="clickToAddTravellers">
+                        <i class="fas fa-user fa-lg"></i>
+                        <span>
+                          <span>Travellers</span>
+                          <span>1 room, 2 travellers</span>
+                        </span>
+                      </div>
+                      <div class="travellersDetailDiv">
+                        <h3>Travelers</h3>
+                        <p>Room 1</p>
+                        <div>
+                          <div>
+                            <p>Adults</p>
+                            <div>
+                              <span class="mathsign">-</span>
+                              <span class="adultsNo">2</span>
+                              <span class="mathsign">+</span>
+                            </div>
+                          </div>
+                          <div>
+                            <div>
+                              <p>Childern</p>
+                              <a href="#">Age 0 to 17</a>
+                            </div>
+                            <div>
+                              <span class="mathsign">-</span>
+                              <span class="childNo">0</span>
+                              <span class="mathsign">+</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Add another room</p>
+                        <button class="doneTravelers">
+                          Done
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div>
+                      <input type="checkbox" id="addFlight" />
+                      <label for="addFlight">Add a fight</label>
+                      <input type="checkbox" id="addCar" />
+                      <label for="addCar">Add a car</label>
+                    </div>
+                    <div>
+                      <button class="searchButton">Search</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- flight booking -->
+                <div data-key="1" class="bookingDetailShow">
+                  <div class="bookingButtons">
+                    <button class="activeBtn">Roundtrip</button>
+                    <button>One-way</button>
+                    <button>Multi-city</button>
+                  </div>
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Leaving From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Going From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+  
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-in</span>
+                          <span>April 8 </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-out</span>
+                          <span>April 9</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div>
+                      <input type="checkbox" id="addFlight" />
+                      <label for="addFlight">Add a place to stay</label>
+                      <input type="checkbox" id="addCar" />
+                      <label for="addCar">Add a car</label>
+                    </div>
+                    <div>
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Car booking -->
+                <div data-key="2" class="bookingDetailShow">
+                  <div class="bookingButtons">
+                    <button class="activeBtn">Rental cars</button>
+                    <button>Airport transportation</button>
+                  </div>
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Leaving From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Going From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+  
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-in</span>
+                          <span>April 8 </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-out</span>
+                          <span>April 9</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div>
+                      <input type="checkbox" id="addFlight" />
+                      <label for="addFlight">Add a place to stay</label>
+                      <input type="checkbox" id="addCar" />
+                      <label for="addCar">Add a car</label>
+                    </div>
+                    <div>
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Package booking -->
+                <div data-key="3" class="bookingDetailShow">
+                  <div class="bookingButtons">
+                    <p>Choose one or more items to build your trip:</p>
+                    <button class="activeBtn">Hotel Added</button>
+                    <button class="activeBtn">Flight Added</button>
+                    <button>Add a car</button>
+                  </div>
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Leaving From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Going From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+  
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-in</span>
+                          <span>April 8 </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-out</span>
+                          <span>April 9</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div>
+                      <input type="checkbox" id="addFlight" />
+                      <label for="addFlight">Add a place to stay</label>
+                      <input type="checkbox" id="addCar" />
+                      <label for="addCar">Add a car</label>
+                    </div>
+                    <div>
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Things to do booking -->
+                <div data-key="4" class="bookingDetailShow">
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Things to do in</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>From</span>
+                          <span>April 8 </span>
+                        </span>
+  
+                        <div class="searchDateDiv">
+                          <iframe
+                            src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                            style="border: solid 1px #777"
+                            width="700"
+                            height="470"
+                            frameborder="0"
+                            scrolling="no"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>To</span>
+                          <span>April 9</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div></div>
+                    <div>
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Package booking -->
+                <div data-key="5" class="bookingDetailShow">
+                  <div class="booking">
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Leaving From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+                    <div class="searchBtn bookingDetailsBtn">
+                      <div class="clickToSearchLocation">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <i>Going From</i>
+                      </div>
+                      <div class="searchLocationDiv">
+                        <input type="text" placeholder="Where are you going?" />
+                      </div>
+                    </div>
+  
+                    <div class="checkInBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-in</span>
+                          <span>April 8 </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="checkOutBtn bookingDetailsBtn">
+                      <div>
+                        <i class="fas fa-calendar-minus fa-lg"></i>
+                        <span>
+                          <span>Check-out</span>
+                          <span>April 9</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkboxAndBtn">
+                    <div>
+                      <input type="checkbox" id="addFlight" />
+                      <label for="addFlight">Add a place to stay</label>
+                      <input type="checkbox" id="addCar" />
+                      <label for="addCar">Add a car</label>
+                    </div>
+                    <div>
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+  
+          <section id="adsInPage">
+            <div id="adsInPageAds">
+              <h1>Orbitz champions great trips for all travelers</h1>
+              <div class="box1sDiv">
+                <div class="box1">
+                  <div class="box1Images">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2%2FLGBT-Transparent.png&f=1&nofb=1"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="box1Info">
+                    <h4>TRAVEL WITH PRIDE</h4>
+                    <p>
+                      Find LGBTQIA-welcoming hotels, destinations, inspiration,and
+                      more
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="box1">
+                  <div class="box1Images bookMore">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-ipad.lisisoft.com%2Fimgmic%2F2%2F6%2F2634-1-orbitz-flights-hotels-cars.jpg&f=1&nofb=1"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="box1Info">
+                    <h4>BOOK MORE, GET MORE</h4>
+                    <p>
+                      Instatly earn Orbucks, plus travel your way to flight and
+                      hotel perks.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="box1">
+                  <div class="box1Images">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ion.tv%2Famerica%2Fimg%2Fcustom-header.png&f=1&nofb=1"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="box1Info">
+                    <h4>REFER A FRIEND</h4>
+                    <p>
+                      Your friend will receive a 15% off coupon; you get $20
+                      Orbucks when they book!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <div id="for_background">
+            <div id="main_box">
+              <div id="box_1">
+                <div id="whats_new">
+                  <h1>What's new</h1>
+                </div>
+                <div id="first_div">
+                  <img
+                    class="first_div_image"
+                    src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/3ORB_Generic_lpheroF_1320x742_20200327.png"
+                    alt="img"
+                  />
+                </div>
+  
+                <div id="second_div">
+                  <h3 class="classh3">Plan now, travel later</h3>
+                  <p class="classp1">
+                    When you're ready,we have deals that are right for you
+                  </p>
+                </div>
+              </div>
+  
+              <div id="box_2">
+                <div id="small_box1">
+                  <div>
+                    <img
+                      class="small_image1"
+                      height="170"
+                      width="135"
+                      src="https://forever.travel-assets.com/flex/flexmanager/images/2020/12/11/ORB_LGBTQIA_imgB_164x152_20200825.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+                      alt="img"
+                    />
+                  </div>
+  
+                  <div class="class_discription">
+                    <h3>Pride in travel</h3>
+                    <p class="classgrey_col">
+                      A rainbow of welcoming hotels for the LGBTQIA traveler.
+                    </p>
+                  </div>
+                </div>
+  
+                <div id="small_box2">
+                  <div>
+                    <img
+                      height="170"
+                      width="135"
+                      src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/3ORB_HOTELS_Spotlight3_Faves_121119.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+                      alt="img"
+                    />
+                  </div>
+  
+                  <div class="class_discription">
+                    <h3>Your favorite hotels</h3>
+                    <p class="classgrey_col">
+                      Where to stay, and why,straight from the travelers like you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div id="featured">
+              <div class="f_class">
+                <h1>Featured offers</h1>
+              </div>
+              <div id="large">
+                <div>
+                  <h3>Explore local getways</h3>
+                  <p>
+                    Get out and explore,and stay close to home with a road trip.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="main_travel">
+              <div class="travel_h1">
+                <h1>Travel tips from the props</h1>
+              </div>
+              <div id="travel_tips">
+                <div id="glamp">
+                  <div id="glamping_spots">
+                    <h2>what to look for in a glamping spot, before you book</h2>
+                  </div>
+                  <div class="discription_small">
+                    <p>
+                      Step yourself in nature without having to sacrifice modern
+                      amenities like running water and comfy beds.
+                    </p>
+                  </div>
+                </div>
+                <div id="air">
+                  <div id="airstream">
+                    <h2>5 amazing Airstream stays to look forward to</h2>
+                  </div>
+                  <div class="discription_small">
+                    <p>
+                      Stay a night in stationary Airstream trailer and enjoy
+                      modern decor,plush amenities and high-tech features!
+                    </p>
+                  </div>
+                </div>
+                <div id="road">
+                  <div id="road_9">
+                    <h2>9 road trip apps to download now</h2>
+                  </div>
+  
+                  <div class="discription_small">
+                    <p>
+                      Before you hit the open road,we've got you covered with the
+                      apps that will make road tripping even better.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Footer -->
+          <div class="back">
+            <div class="flex">
+              <div class="vacbox">
+                <div class="vacation">Vacation your way</div>
+                <div class="picts one">Last Minute deals
+                 Getaway today
+                </div>
+                <div class="picts two">Jet and Reset
+                 Fly somewhere beechy and warm
+                </div>
+                <div class="picts three">All-inclusive</div>
+                <div class="picts four">Insider prices Members get rewared</div>
+                <div class="picts five">All-inclusive resorts
+                  Enjoy sun and fun
+                </div>
+              </div>
+              <div class="pico">
+                <div class="mob"></div>
+                <div class="content">
+                  <div class="info">
+                    <div class="rewards">
+                      Rewards are waiting for you in the Orbitz app
+                    </div>
+                    <div class="sline">
+                      <ul>
+                        <li>
+                          Earn 4% back when you book your hotel in app, vs. 3% on
+                          site
+                        </li>
+                        <li>Get flight status and gate number notifications</li>
+                        <li>
+                          Have questions about your stay? Message your hotel right
+                          in the app
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text">Text yourself a download link</div>
+                    <select
+                      name=""
+                      class="input floating"
+                      aria-placeholder="Country-code"
+                    >
+                      <option value="USA +1" selected>USA +1</option>
+                      <option value="India +91">India +91</option>
+                      <option value="Pakistan +92">Pakistan +92</option>
+                    </select>
+                    <input
+                      class="floating enter"
+                      type="number"
+                      placeholder="Phone Number"
+                    />
+                    <button class="floating get">Get the app</button>
+                    <div class="lawo">
+                      By providing your number, you agree to receive a one-time
+                      automated text message with a link to get the app. Standard
+                      text message rates may apply.
+                    </div>
+                  </div>
+                  <div class="qr">
+                    <div class="qrimg"></div>
+                    <div class="scan">Scan the QR code</div>
+                  </div>
+                </div>
+              </div>
+              <div class="more">
+                <div class="heading">More destinations</div>
+                <div class="sep">Beach destinations</div>
+                <div class="sep">Flight to top city destinations</div>
+                <div class="sep">Popular airlines</div>
+                <div class="sep">Routes to and from Maui island</div>
+                <div class="sep">Routes to and from Las Vegas</div>
+                <div class="sep">Routes to and from Los Angleles</div>
+                <div class="sep">Routes to and from NYC</div>
+                <div class="sep">Flights to Florida destinations</div>
+                <div class="sep">Flights to Southern US destinations</div>
+                <div class="sep">Other popular routes</div>
+                <div class="sep">Destination deals</div>
+                <div class="sep">International destinations</div>
+              </div>
+  
+              <div class="foot">
+                <div class="enlist">
+                  <ul>
+                    <li>About Orbitz</li>
+                    <li>Investor Relations</li>
+                    <li>Jobs</li>
+                    <li>Media Room</li>
+                    <li>Advertising</li>
+                    <li>Become an Affiliate</li>
+                    <li>Add a Hotel</li>
+                    <li>Add an Activity</li>
+                    <li>Orbitz for Business</li>
+                    <li>Orbitz for Agents</li>
+                    <li>Terms of Use</li>
+                    <li>Support</li>
+                    <li>Privacy Policy</li>
+                  </ul>
+                </div>
+                <div class="sell">Do Not Sell My Personal Information</div>
+                <div class="copyright">
+                  <div class="rate">
+                    © 2021 Orbitz, LLC, An Expedia Group Company. All rights
+                    reserved. Orbitz, Orbitz.com, and the Orbitz logo are either
+                    registered trademarks or trademarks of Orbitz, LLC in the U.S.
+                    and/or other countries. Other logos or product and company
+                    names mentioned herein may be the property of their respective
+                    owners. CST #2063530-50
+                  </div>
+                </div>
+                <div class="expedia">
+                  <img
+                    src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<style>
+    * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00253c;
+  padding: 17px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+#logo {
+  margin: 6px 40px 0px 100px;
+}
+nav > ul > li > a:hover {
+  color: #01a4bb;
+}
+.arrow {
+  border: solid white;
+  border-width: 0px 2px 2px 0px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+nav > ul > li > a:hover .arrow {
+  border: solid #01a4bb;
+  border-width: 0px 2px 2px 0px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  width: 380px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  margin-left: -12px;
+  z-index: 20;
+}
+
+nav > ul:nth-child(2) {
+  margin: 0px 80px 0px 0px;
+}
+nav > ul:nth-child(2) li {
+  margin: 0px 18px;
+}
+.submenu li {
+  margin: 22px 0px;
+}
+.submenu a {
+  color: #888787;
+  text-decoration: none;
+}
+.submenu i {
+  margin-right: 14px;
+  /* color: #888787; */
+}
+ .signinDiv {
+  position: relative;
+}
+.signin {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: 0px;
+  width: 380px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  margin-left: -12px;
+  z-index: 20;
+}
+.signin h3 {
+  margin-top: 30px;
+  font-weight: 560;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.signin button {
+  margin: 24px 0px 0px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #cf4c6f;
+}
+.signin button:hover {
+  opacity: 0.85;
+}
+.signin > #createAcc {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #01a4bb;
+  font-size: 18px;
+  font-weight: 500;
+}
+.signin > a {
+  display: block;
+  color: #888787;
+  text-decoration: none;
+  margin: 22px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin > hr {
+  width: 100%;
+  /* margin: auto; */
+}
+.signin > a:last-child {
+  display: block;
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+} 
+
+
+html {
+  scroll-behavior: smooth;
+}
+#bookingDiv {
+  height: 65vh;
+  min-height: 486px;
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#bookingDiv > #bookingBox {
+  width: 96%;
+  max-width: 1200px;
+  /* height: 84%; */
+  background-color: white;
+  margin-top: 30px;
+}
+#bookingBox > ul {
+  /* border: 1px solid red; */
+  border-bottom: 1px solid #999999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 80px;
+  padding: 0px 50px;
+  margin-top: 10px;
+}
+#bookingBox > ul > li {
+  cursor: pointer;
+  list-style: none;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 17px 0px;
+  /* border: 1px solid red; */
+}
+#bookingBox > ul > li > i {
+  margin-bottom: 14px;
+}
+#bookingBox > ul > li > p {
+  font-size: 16px;
+}
+#bookingBox > ul > .currentBooking {
+  color: #01a4bb;
+  border-bottom: 3px solid #01a4bb;
+}
+
+.bookingDetailShow {
+  display: none;
+}
+.displayDetails {
+  display: block;
+}
+
+.booking {
+  /* border: 1px solid #01a4bb; */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.bookingButtons {
+  margin: 20px 0px;
+  margin-left: 40px;
+}
+.bookingButtons > button {
+  padding: 13px 28px;
+  margin-right: 12px;
+  font-size: 14px;
+  background-color: white;
+  color: #999999;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.bookingButtons > .activeBtn {
+  background-color: #017f8f;
+  color: white;
+}
+.bookingButtons > button:hover {
+  background-color: #017f8f;
+  color: white;
+}
+.bookingButtons > p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #999999;
+}
+.bookingButtons > p ~ button {
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+.bookingButtons > p + button:hover {
+  background-color: #017f8f;
+  color: white;
+}
+.bookingDetailsBtn {
+  padding: 5px 16px;
+  /* height: 40px; */
+  border: 1px solid #999999;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bookingDetailsBtn > div:first-child {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.bookingDetailsBtn > div > i {
+  color: #616161;
+  margin-right: 12px;
+}
+.bookingDetailsBtn > div > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bookingDetailsBtn > div > span > span:first-child {
+  font-size: 14px;
+  margin: 1px 0px;
+  color: #999999;
+}
+.searchBtn {
+  /* width: 39%; */
+  flex: 4;
+  position: relative;
+}
+.clickToSearchLocation {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  /* text-align: left; */
+}
+.checkInBtn {
+  flex: 1;
+  position: relative;
+}
+
+.checkOutBtn {
+  flex: 1;
+  /* position: relative; */
+}
+.travellersBtn {
+  flex: 2;
+  position: relative;
+}
+.checkboxAndBtn {
+  padding: 20px 40px;
+  /* border: 1px solid red; */
+}
+.checkboxAndBtn > div:first-child {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.checkboxAndBtn > div:first-child > input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #999999;
+}
+.checkboxAndBtn > div:first-child > label {
+  margin-right: 40px;
+  font-size: 16px;
+  color: #999999;
+}
+.checkboxAndBtn > div:nth-child(2) {
+  width: 180px;
+  margin: 30px auto 30px;
+  /* border: 1px solid red; */
+}
+.checkboxAndBtn button {
+  padding: 14px 67px;
+  outline: none;
+  border: none;
+  background-color: rgb(207, 75, 110);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkboxAndBtn button:hover {
+  opacity: 0.9;
+}
+.searchLocationDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  /* padding: 10px 25px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  z-index: 10;
+}
+.searchLocationDiv > input {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  outline: none;
+}
+.searchDateDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 700px;
+  height: 470px;
+  /* padding: 10px 25px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  z-index: 10;
+}
+.travellersDetailDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  width: 360px;
+  height: 320px;
+  padding: 20px 18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  font-size: 16px;
+  z-index: 10;
+}
+.travellersDetailDiv > h3 {
+  margin-bottom: 18px;
+}
+.travellersDetailDiv > p:nth-child(2) {
+  font-size: 18px;
+}
+.travellersDetailDiv > div > div {
+  color: #999999;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.travellersDetailDiv > div > div > div > a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 12px;
+}
+.mathsign {
+  border: 2px solid black;
+  padding: 1px 7px;
+  border-radius: 50%;
+}
+.mathsign + span {
+  margin: 0px 6px;
+  color: black;
+}
+.travellersDetailDiv > p:nth-child(4) {
+  text-align: right;
+  font-size: 18px;
+  color: #01a4bb;
+}
+.travellersDetailDiv > button {
+  width: 100%;
+  padding: 14px 67px;
+  outline: none;
+  border: none;
+  background-color: rgb(207, 75, 110);
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.travellersDetailDiv button:hover {
+  opacity: 0.9;
+}
+#help {
+  width: 90px;
+  padding: 8px 16px;
+  display: flex;
+  /* border: 1px solid red; */
+  border-radius: 16px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: #01a4bb;
+  box-shadow: 0px 0px 10px;
+  cursor: pointer;
+  background-color: white;
+  z-index: 100;
+}
+#help > img {
+  max-width: 30%;
+  margin-right: 10px;
+}
+#help > i {
+  margin-right: 10px;
+}
+
+#adsInPage {
+  background-color: #e6e6e6;
+}
+
+#adsInPageAds {
+  /* border: 1px solid red; */
+  width: 88%;
+  margin: auto;
+  padding: 60px 10px;
+}
+#adsInPageAds > h1 {
+  margin-left: 12px;
+  font-size: 28px;
+}
+.box1sDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  /* border: 1px solid red; */
+}
+
+.box1 {
+  background-image: linear-gradient(white 72%, #999999);
+  margin: 0px 14px;
+  padding: 40px 20px;
+  height: 160px;
+  flex: 1;
+  display: flex;
+}
+
+.box1Images {
+  /* border: 1px solid red; */
+  flex: 1.5;
+  border-radius: 20%;
+  margin-right: 6px;
+  margin-top: -8px;
+  overflow: hidden;
+}
+.bookMore > img {
+  /* border: 1px solid red; */
+  max-width: 90%;
+  max-height: 90%;
+}
+.box1Images > img {
+  max-width: 100%;
+}
+.box1Info {
+  flex: 4;
+}
+.box1Info > h4 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.box1Info > p {
+  color: #999999;
+}
+.back {
+    background-color: #e6e6e6;
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+.flex {
+  min-width: 86%;
+  padding: 0 9px 0 9px;
+  justify-content: space-around;
+}
+.vacation {
+  margin-left: 12px;
+  margin-bottom: 8px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.vacbox {
+  /* border: 1px solid red; */
+  min-width: 100%;
+  height: 271.806px;
+  width: 918.003px;
+  padding: 9px 0px 50px 0;
+  margin-bottom: 50px;
+}
+.picts {
+  cursor: pointer;
+  float: left;
+  height: 212.5px;
+  width: 232.5px;
+  /* border: 2px solid red; */
+  margin: 12px 7px 0px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  /* text-decoration: underline solid rgb(0,126,143); */
+  line-height: 15.4286px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.one {
+  background: url('./images/last.jpg');
+  background-size: cover;
+}
+.two {
+  background: url('./images/lux.jpg');
+  background-size: cover;
+}
+.three {
+  background: url('./images/lo.jpg');
+  background-size: cover;
+}
+.four {
+  background: url('./images/min.jpg');
+  background-size: cover;
+}
+.five {
+  background: url('https://www.tripsavvy.com/thmb/FwmQ-JvBEBDDlVb-j_zdEo0iVsA=/2048x1152/smart/filters:no_upscale()/beach-5b59c9b7c9e77c004b3e0ff0.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+.pico {
+  /* border: 1px solid red; */
+  height: 300px;
+  min-width: 100%;
+  padding: 9px 9px 18px 10px;
+  /* max-width: 936px; */
+  margin-bottom: 19px;
+}
+.mob {
+  float: left;
+  height: 300px;
+  width: 30%;
+  background: url('./images/ORB_App_Footer_v1.jpg');
+}
+.content {
+  float: left;
+  width: 70%;
+  height: 300px;
+  background-color: white;
+  padding-left: 60px;
+  padding-top: 10px;
+  /* background: url('content.png'); */
+}
+.info {
+  float: left;
+  /* border: 1px solid red; */
+  width: 417.378px;
+  height: 250px;
+  padding-left: 5px;
+}
+.rewards {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 26px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 46.667px;
+  width: 417.378px;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.sline {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 22px;
+  margin-left: 18px;
+  font-size: 12px;
+  line-height: 13.5px;
+}
+.sline > ul > li {
+  margin-bottom: 10px;
+}
+.text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 16.5px;
+  height: 15.5356px;
+  width: 417.378px;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+}
+.floating {
+  float: left;
+  width: 135.122px;
+  height: 35.9896px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+.enter {
+  height: 35px;
+  width: 134px;
+}
+.get {
+  cursor: pointer;
+  margin-right: 0;
+  background-color: #eb3966;
+  border: none;
+  outline: none;
+  width: 126px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lawo {
+  /* border: 1px solid red; */
+  margin-top: 60px;
+  font-size: 9px;
+  width: 417.378px;
+  height: 22.2222px;
+  line-height: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.qr {
+  float: right;
+  margin-right: 100px;
+  margin-top: 16px;
+  /* border: 1px solid red; */
+}
+.qrimg {
+  background: url('./images/qr_app_landing_footer_orbitz.jpg');
+  width: 160px;
+  height: 160px;
+  margin-left: 40px;
+}
+.scan {
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 127.135px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 13.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.more { 
+  min-width: 100%;
+  height: 300.181px;
+  padding: 40px 0 9px 0;
+  max-width: 936px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+.heading {
+  /* width: 918.0038px; */
+  /* height: 23.333px; */
+  /* border: 1px solid red; */
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sep {
+  cursor: pointer;
+  height: 46.9722px;
+  width: 302px;
+  background-color: white;
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 9px;
+  line-height: 16.5px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.foot {
+  color: #999999;
+  height: 270px;
+  min-width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 10px auto;
+  /* padding-left: 50px; */
+}
+.enlist > ul {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-bottom: 20px;
+}
+.enlist > ul > li {
+  display: inline;
+  margin: 0px 4px;
+  font-size: 14px;
+  line-height: 12px;
+  cursor: pointer;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.enlist > ul > li:hover {
+  text-decoration: underline solid rgb(0, 126, 143);
+  color: rgb(0, 126, 143);
+  cursor: pointer;
+}
+.sell {
+  height: 28.9965px;
+  width: 260px;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sell:hover {
+  cursor: pointer;
+  text-decoration: underline solid rgb(0, 126, 143);
+  color: rgb(0, 126, 143);
+}
+.copyright {
+  height: 110px;
+  width: 800.017px;
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate {
+  cursor: default;
+  height: 44.444px;
+  width: 360px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.expedia {
+  cursor: pointer;
+  margin: auto;
+  width: 150px;
+  height: 80px;
+  padding: 20px;
+}
+
+/* Mid boxes  */
+#for_background {
+  background-color: #f5f5f5;
+}
+#main_box {
+  width: 86%;
+  margin: auto;
+  display: flex;
+  /* gap: 20px; */
+  /* border: 1px solid red; */
+}
+#box_1 {
+  /* border: 1px solid red; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* margin-left: 4%; */
+}
+#whats_new {
+  /* margin-left: 12%; */
+  padding-left: 6px;
+  margin-bottom: 10px;
+}
+#first_div {
+  width: 100%;
+  height: 250px;
+  /* margin-left: 12%; */
+}
+.first_div_image {
+  width: 100%;
+  height: 250px;
+}
+.classh3 {
+  padding: 10px;
+}
+.classp1 {
+  padding: 10px;
+  color: rgb(78, 71, 71);
+}
+#second_div {
+  width: 100%;
+  /* margin-left: 12%; */
+  background-color: white;
+  height: 100px;
+}
+#box_2 {
+  width: 39%;
+  /* border: 1px solid green; */
+}
+.class_discription {
+  /* border: 1px solid red; */
+
+  padding: 35px;
+}
+#small_box1 {
+  /* border: 1px solid red; */
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  margin-top: 46px;
+  display: flex;
+}
+
+#small_box2 {
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  display: flex;
+}
+/* .classgrey_col { */
+/* color: rgb(100, 98, 98); */
+/* } */
+
+#large {
+  /* margin-left: 150px; */
+  width: 100%;
+  height: 250px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+#large div {
+  margin-left: 2%;
+  color: white;
+}
+#featured {
+  width: 86%;
+  margin: 0px auto 60px;
+  padding: 0 9px 0 9px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.f_class {
+  margin-top: 5%;
+  margin-bottom: 14px;
+
+  /* border: 1px solid red; */
+
+  /* margin-left: 150px; */
+}
+#main_travel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+#travel_tips {
+  display: flex;
+  width: 86%;
+  margin: auto;
+  gap: 12px;
+}
+.travel_h1 {
+  width: 86%;
+  margin: 14px auto;
+
+  /* border: 1px solid red; */
+}
+#glamping_spots {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/glamping2.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+#airstream {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/airstream.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  opacity: 0.8;
+}
+#road_9 {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  opacity: 0.8;
+}
+#glamp {
+  display: flex;
+  flex-direction: column;
+}
+#air {
+  display: flex;
+  flex-direction: column;
+}
+#road {
+  display: flex;
+  flex-direction: column;
+}
+.discription_small {
+  background-color: white;
+  width: 400px;
+}
+.discription_small > p {
+  padding: 5px;
+  margin: 10px;
+  color: #999999;
+}
+#glamping_spots > h2 {
+  /* border: 1px solid red; */
+  font-size: 22px;
+  margin: 5px;
+}
+#airstream > h2 {
+  margin: 5px;
+}
+#road_9 > h2 {
+  margin: 5px;
+}
+
+/* chatbot */
+#main_div {
+  display: none;
+  background-color: whitesmoke;
+  height: 650px;
+  width: 25%;
+  border-radius: 15px;
+  position: fixed;
+  top: 70px;
+  right: 36px;
+  z-index: 120;
+  box-shadow: 0px 0px 10px;
+}
+#how_para {
+  display: flex;
+  height: 42px;
+  background-color: #01b1ff;
+  justify-content: space-between;
+  border-radius: 3px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.button_x {
+  margin-top: -8px;
+}
+.button_x1 {
+  height: 25px;
+  width: 25px;
+  margin-top: 4px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#para_chat {
+  text-align: center;
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+#logo2 {
+  text-align: center;
+  margin: 30px 0px 10px;
+}
+#logo_para {
+  text-align: center;
+  margin-bottom: 14px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+#chat_start {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+#chat_start img {
+  margin: 10px 4px;
+}
+.para_chat {
+  height: 45px;
+  background-color: #999999;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  /* color: ; */
+}
+#chat_start2 {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#chat_start2 img {
+  margin: 15px 4px;
+}
+.para_chat {
+  height: 45px;
+  background-color: rgb(214, 213, 213);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 3px 10px;
+}
+.para_chat1 {
+  height: 65px;
+  background-color: rgb(214, 213, 213);
+  max-width: 96%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 6px 8px;
+}
+#button_section {
+  margin-top: 150px;
+}
+#down_btn {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#first_btn {
+  margin-left: 10px;
+}
+.button_class {
+  /* height: 40px; */
+  /* width: 110px; */
+  margin-right: 8px;
+  padding: 1px 10px;
+  color: #01b1ff;
+  border-radius: 25px;
+  border-color: #01b1ff;
+  margin-bottom: 4px;
+}
+.button_class:hover {
+  background-color: #01b1ff;
+  color: white;
+}
+.button_class1 {
+  /* height: 40px;
+  width: 150px; */
+  padding: 8px 14px;
+  color: #01b1ff;
+  margin-left: 12px;
+  border-radius: 25px;
+  border-color: #01b1ff;
+}
+.button_class1:hover {
+  background-color: #01b1ff;
+  color: white;
+}
+#last_line {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.input_box {
+  height: 40px;
+  padding: 10px;
+  width: 270px;
+  border-color: rgb(182, 179, 179);
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+.icon_place {
+  margin-top: 5px;
+}
+#moreTra{
+  width: 20px;
+}
+
+
+
+</style>
+</html>
